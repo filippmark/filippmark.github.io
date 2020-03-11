@@ -1,0 +1,239 @@
+@import "variables.less";
+
+@card-width-desktop: 280px;
+@card-heigth-desktop: 400px;
+@card-width-tablet: 233px;
+@card-heigth-tablet: 380px;
+@card-margin: 10px;
+
+body {
+    font-family: @avenir-font;
+    font-size: @fund-default-font-size;
+    width: 100%;
+
+    .componentwrapper {
+        width: @card-width-tablet + @card-margin + 20px;
+        margin: 0 auto;
+        min-width: @card-width-desktop + @card-margin + 30px;
+
+        @media (min-width: @tablet-min) {
+            flex-wrap: wrap;
+            width: calc(3*(@card-width-tablet + @card-margin + 10px));
+        }
+
+        @media (min-width: @desktop-min) {
+            width: calc(3 * (@card-width-desktop + @card-margin + 10px));
+        }
+
+
+        .sliderheadingwrapper {
+            margin: 0 auto;
+
+            .sliderheading {
+                margin-left: @card-margin;
+
+                @media(max-width: @mobile-max) {
+                    margin-left: @card-margin + 10px;
+                }
+            }
+        }
+
+        .wrapper {
+
+            display: flex;
+            align-items: center;
+            min-width: @card-width-desktop + @card-margin + 30px;
+
+            .sliderwrapper {
+                overflow: hidden;
+                width: 100%;
+                min-width: @card-width-desktop + @card-margin + 10px;
+
+                .slider {
+                    position: relative;
+                    margin: 0 auto;
+                    width: 100%;
+                    display: flex;
+                    transition: transform 200ms linear 0s;
+
+                    @media (min-width: @tablet-min) {
+                        flex-wrap: wrap;
+                        width: 100%;
+                    }
+
+                    a {
+
+                        text-decoration: none;
+
+                        .cardcontainer {
+                            position: relative;
+
+                            &:hover {
+
+                                .card {
+                                    opacity: 0.3;
+
+                                }
+
+                                .cardhover {
+                                    display: block;
+                                    opacity: 0.8;
+                                }
+                            }
+
+                            .card:last-child {
+                                margin-right: 0px;
+                            }
+
+                            .card {
+                                height: @card-heigth-desktop;
+                                width: @card-width-desktop;
+                                box-shadow: @default-shadow;
+                                margin: @card-margin;
+                                color: @darkText;
+                                padding: 0px;
+
+                                @media (min-width: @tablet-min) {
+                                    width: @card-width-tablet;
+                                    height: @card-heigth-tablet;
+                                }
+                        
+                                @media (min-width: @desktop-min) {
+                                    width: @card-width-desktop;
+                                    height: @card-heigth-desktop;
+                                }
+
+                                .card__image {
+                                    width: 100%;
+                                    height: 50%;
+                                    background: #111111;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+
+                                .card__body {
+                                    margin: 30px 10px;
+
+                                    .card__author {
+                                        margin-top: 25px;
+                                        margin-bottom: 10px;
+
+                                        h5 {
+                                            margin: 0px;
+                                            font-weight: @avenir-heavy;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .cardhover {
+                                display: none;
+                                position: absolute;
+                                padding: 0px;
+                                opacity: 0;
+                                top: -@card-margin;
+                                margin: @card-margin;
+                                width: @card-width-desktop;
+                                height: @card-heigth-desktop;
+                                background: @teal;
+                                box-shadow: @default-shadow-hover;
+                                text-align: center;
+
+                                @media (min-width: @tablet-min) {
+                                    width: @card-width-tablet;
+                                    height: @card-heigth-tablet;
+                                }
+                        
+                                @media (min-width: @desktop-min) {
+                                    width: @card-width-desktop;
+                                    height: @card-heigth-desktop;
+                                }
+
+                                .cardhover__body {
+                                    margin: 40% 10% 30%;
+
+
+                                    .cardhover__lock {
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        background: @white;
+                                        margin: 0 auto;
+                                        color: @teal;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 30px;
+                                    }
+
+                                    .cardhover__header {
+                                        color: @lightText;
+                                    }
+
+                                    .cardhover__btnswrapper {
+                                        margin: 10px auto;
+                                        width: 120px;
+                                        height: 80px;
+                                        text-align: center;
+
+                                        .cardhover__btn {
+                                            background: transparent;
+                                            width: 100px;
+                                            margin: 5px;
+                                            color: @lightText;
+                                            text-align: center;
+                                            border: 1px solid @white;
+                                            padding: 5px 20px;
+
+                                            &:hover {
+                                                color: @teal;
+                                                background: @white;
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+        .slidecontrols {
+            margin-top: 10px;
+
+            .slidecontrols__dots {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0px;
+
+                .slidecontrols__dot {
+                    margin-right: 5px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .btn__icon {
+        padding: 0px;
+        background: transparent;
+    }
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    </link>
+    <script src="https://kit.fontawesome.com/b8656597e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="componentwrapper">
+        <div class="sliderheadingwrapper">
+            <h1 class="sliderheading"> Category </h1>
+        </div>
+        <div class="wrapper">
+            <div class="visible-xs sliderwrapper_chevron col-1" id="chevron-left" onclick="decrementIndex()">
+                <button class="btn btn__icon plain borderless">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="sliderwrapper">
+                <div class="slider" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)"
+                    ontouchend=" handleTouchEnd()" id="slider">
+                    <a href="/">
+                        <div class="cardcontainer">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img src="https://www.bigstockphoto.com/images/homepage/module-4.jpg"/>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__header">
+                                        <h4>
+                                            Engage Clients with Behavioral Finance
+                                        </h4>
+                                    </div>
+                                    <div class="card__author">
+                                        <h5> Shlomo Benartzi </h5>
+                                    </div>
+                                    <div class="card__details">
+                                        <p>
+                                            Co-founder, Behavioral Decision-Making
+                                            Group, UCLA Academic Advisor to
+                                            WisdomTree
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardhover">
+                                <div class="cardhover__body">
+                                    <div class="cardhover__lock">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="cardhover__header">
+                                        <h5>
+                                            Financial Professional Access Only
+                                        </h5>
+                                    </div>
+                                    <div class="cardhover__btnswrapper">
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Sign in
+                                        </button>
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div class="cardcontainer">
+                            <div class="card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__header">
+                                        <h4>
+                                            Engage Clients with Behavioral Finance
+                                        </h4>
+                                    </div>
+                                    <div class="card__author">
+                                        <h5> Shlomo Benartzi </h5>
+                                    </div>
+                                    <div class="card__details">
+                                        <p>
+                                            Co-founder, Behavioral Decision-Making
+                                            Group, UCLA Academic Advisor to
+                                            WisdomTree
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardhover">
+                                <div class="cardhover__body">
+                                    <div class="cardhover__lock">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="cardhover__header">
+                                        <h5>
+                                            Financial Professional Access Only
+                                        </h5>
+                                    </div>
+                                    <div class="cardhover__btnswrapper">
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Sign in
+                                        </button>
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div class="cardcontainer">
+                            <div class="card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__header">
+                                        <h4>
+                                            Engage Clients with Behavioral Finance
+                                        </h4>
+                                    </div>
+                                    <div class="card__author">
+                                        <h5> Shlomo Benartzi </h5>
+                                    </div>
+                                    <div class="card__details">
+                                        <p>
+                                            Co-founder, Behavioral Decision-Making
+                                            Group, UCLA Academic Advisor to
+                                            WisdomTree
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardhover">
+                                <div class="cardhover__body">
+                                    <div class="cardhover__lock">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="cardhover__header">
+                                        <h5>
+                                            Financial Professional Access Only
+                                        </h5>
+                                    </div>
+                                    <div class="cardhover__btnswrapper">
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Sign in
+                                        </button>
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div class="cardcontainer">
+                            <div class="card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__header">
+                                        <h4>
+                                            Engage Clients with Behavioral Finance
+                                        </h4>
+                                    </div>
+                                    <div class="card__author">
+                                        <h5> Shlomo Benartzi </h5>
+                                    </div>
+                                    <div class="card__details">
+                                        <p>
+                                            Co-founder, Behavioral Decision-Making
+                                            Group, UCLA Academic Advisor to
+                                            WisdomTree
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardhover">
+                                <div class="cardhover__body">
+                                    <div class="cardhover__lock">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="cardhover__header">
+                                        <h5>
+                                            Financial Professional Access Only
+                                        </h5>
+                                    </div>
+                                    <div class="cardhover__btnswrapper">
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Sign in
+                                        </button>
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/">
+                        <div class="cardcontainer">
+                            <div class="card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__header">
+                                        <h4>
+                                            Engage Clients with Behavioral Finance
+                                        </h4>
+                                    </div>
+                                    <div class="card__author">
+                                        <h5> Shlomo Benartzi </h5>
+                                    </div>
+                                    <div class="card__details">
+                                        <p>
+                                            Co-founder, Behavioral Decision-Making
+                                            Group, UCLA Academic Advisor to
+                                            WisdomTree
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardhover">
+                                <div class="cardhover__body">
+                                    <div class="cardhover__lock">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="cardhover__header">
+                                        <h5>
+                                            Financial Professional Access Only
+                                        </h5>
+                                    </div>
+                                    <div class="cardhover__btnswrapper">
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Sign in
+                                        </button>
+                                        <button type="btn" class="btn border border-white cardhover__btn">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="visible-xs sliderwrapper_chevron col-1" id="chevron-right">
+                <button class="btn btn__icon plain borderless" onclick="incrementIndex()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="slidecontrols visible-xs">
+            <ul class="slidecontrols__dots" id="dots" onclick="handleDotClick(event)">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
